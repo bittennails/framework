@@ -3,7 +3,7 @@ framework
 
 BittenNails Design's starter framework based off Skeleton.
 
-http://bittennails.com/framework
+http://framework.bittennails.com/
 
 Your free to use this, but no support is provided, so do not contact me.
 
