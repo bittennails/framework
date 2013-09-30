@@ -1,5 +1,4 @@
 <?php $thisPage="full-width-video"; ?>
-<!-- Head with custom titles/desc/keywords  -->
 <?php 
 	$title = "Custom Page Title Here: ie: Full Width Video!";
 	$description = "Custom meta description here";

@@ -12,7 +12,16 @@
 		<div class="sixteen columns">
 			<h1 class="logo"><a href="">Magazine</a></h1>				
 			<a class="banner" href="index.html#">
-				<img src="img/banners/468x60.gif" alt="" />
+				<!--<img src="img/banners/468x60.gif" alt="" />-->
+				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				<!-- Framework-1 -->
+				<ins class="adsbygoogle"
+				     style="display:inline-block;width:468px;height:60px"
+				     data-ad-client="ca-pub-4521198546487941"
+				     data-ad-slot="9303812062"></ins>
+				<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
 			</a>
 		</div>
 	</header>

@@ -1,5 +1,4 @@
 <?php $thisPage="interior"; ?>
-<!-- Head with custom titles/desc/keywords  -->
 <?php 
 	$title = "Custom Page Title Here: ie: Interior!";
 	$description = "Custom meta description here";
