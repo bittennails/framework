@@ -29,7 +29,7 @@
 				<li>These columns can have any content that you wish to display.</li>
 				<li>These columns can have any content that you wish to display.</li>
 				<li>These columns can have any content that you wish to display.</li>
-				<li>These columns can have any content that you wish to display.</li>						
+				<li>These columns can have any content that you wish to display..</li>						
 			</ul>
 		</div>
 		<div class="four columns">
