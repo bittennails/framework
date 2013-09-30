@@ -1,0 +1,659 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+* Modified version by Chopi - use at your own risk.
+*/
+
+/* Table of Content
+==================================================
+	#Typography baseline corrections
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+	
+	/* #Typography (baseline corrections)
+================================================== */
+
+	h1 { line-height: 49px; margin-bottom: 14px;}
+	h2 { line-height: 42px; margin-bottom: 7px; }
+	h3 { line-height: 35px; margin-bottom: 7px; }
+	h4 { line-height: 28px; margin-bottom: 7px; }
+	h5 { line-height: 21px; }
+
+	p { margin: 0 0 21px 0; }
+	p.lead { line-height: 28px; }
+
+
+/*	Blockquotes  */
+	blockquote, blockquote p { line-height: 21px;}
+	blockquote { margin: 0 0 21px; padding: 7px 20px 0 19px; }
+
+	hr { margin: 14px 0 28px;}
+	
+/* #Lists (baseline corrections)
+================================================== */
+	ul, ol { margin-bottom: 21px; }
+	ul ul, ul ol,
+	ol ol, ol ul { margin: 7px 0 7px 30px; }
+	ul ul li, ul ol li,
+	ol ol li, ol ul li { margin-bottom: 7px; }
+	li { line-height: 21px; margin-bottom: 14px; }
+	
+	
+
+/* #Site Styles
+================================================== */
+
+/* grids examples */
+.grid-example .column, .grid-example .columns {
+background: #ccc;
+display: block;
+height: 60px;
+margin-bottom: 20px;
+}
+
+
+/*http://www.justbenicestudio.com/studio/websymbols/*/
+@font-face {
+    font-family: 'WebSymbolsRegular';
+    src: url('../fonts/websymbols-regular-webfont.eot');
+    src: url('../fonts/websymbols-regular-webfont-.eot#iefix') format('embedded-opentype'),
+         url('../fonts/websymbols-regular-webfont.woff') format('woff'),
+         url('../fonts/websymbols-regular-webfont.ttf') format('truetype'),
+         url('../fonts/websymbols-regular-webfont.svg.html#WebSymbolsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* rows */
+.horiz-full {
+	background: url(../img/bg_main.png) repeat #f8f8f8;
+	padding: 0 0 14px 0;
+}
+.horiz-full.callout-top {
+	/*background: url(../img/bg_top.png) repeat #343434;
+	padding: 28px 0 7px 0;
+	color: #e0e0e0;*/
+	background:#06c;
+	color: #fff;
+	border-bottom: 2px solid #036;
+	padding: 0;
+}
+.horiz-full.header {
+	padding: 0;
+}
+.horiz-full.navigation {
+	background: url(../img/bg_dark.png) repeat #343434;
+	color: #e0e0e0;
+	padding: 0;
+}
+.horiz-full.content {}
+
+.horiz-full.footer {
+	background: url(../img/bg_dark.png) repeat #343434;
+	padding: 49px 0 14px 0;
+	color: #e0e0e0;
+}
+.horiz-full.callout-bottom {
+	background:  url(../img/bg_top.png) repeat #343434;
+	padding: 28px 0 7px 0;
+	color: #e0e0e0;
+}
+
+/* Top Callout Optional */
+
+.callout-top-txt {
+	margin: 0 auto;
+	padding: 15px 0 7px 0;
+	text-align: center;
+}
+
+
+/* Heading */
+header.main {
+	padding: 35px 0;
+}
+header h1.logo {
+	margin: 7px 0 0 0;
+	float: left;
+}
+header h1.logo a {
+	width: 280px;
+	height: 49px;
+	display: block;
+	background: url(../img/logo-sprite.png) no-repeat 0 0;
+	/*Nick Gallgher*/
+	font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+}
+header.main .banner {
+	float: right;
+}
+
+/*navigation*/
+nav.primary ul,
+nav.primary ul li {
+	margin: 0px;
+}
+
+nav.primary select {
+	display: none;
+	width:  100%;
+	height: 28px;
+	margin: 21px 0;
+}
+
+nav.primary ul li {
+	display: inline;
+	float: left;
+	position: relative;
+}
+
+nav.primary ul li a {
+	display: inline-block;
+	line-height: 49px;
+	padding:  0 14px;
+	color: #ebebeb;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	letter-spacing: 0.08em;
+}
+
+nav.primary ul li a:hover {
+	background: #424242;
+	cursor: pointer;
+}
+
+/*sub menu*/
+nav.primary ul ul {
+	opacity: 0; 
+  	filter: alpha(opacity=0); 
+
+	position: absolute;
+	top:100%;
+	left: 0;
+	z-index: 999999;
+	background: url("../img/bg_top.png");
+	
+	height: 0px;
+	overflow: hidden;
+	
+	min-width: 100%;
+	
+	-webkit-transition: opacity 0.4s ease-out;
+	-moz-transition: opacity 0.4s ease-out;
+	-o-transition: opacity 0.4s ease-out;
+	-ms-transition: opacity 0.4s ease-out;
+	transition: opacity 0.4s ease-out;
+	
+	-webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);	
+}
+
+nav.primary ul li span {
+	display: none;
+}
+
+nav.primary ul li:hover ul {
+	opacity: 10; 
+  	filter: alpha(opacity=100); 
+  	
+	height: auto;
+	overflow: auto;
+	
+	display: block;
+}
+
+nav.primary ul ul li {
+	float: none;
+	display: list-item;
+	border-bottom: 1px solid #383737;
+}
+
+nav.primary ul ul li a {
+	display: block;
+	line-height: 35px;
+	text-transform: none;
+	position: relative;
+	z-index: 999999;
+	white-space: nowrap;
+}
+
+nav.primary ul li:hover > a {
+	background: #424242;
+}
+
+/* Footer */
+
+footer.bottom {
+	font-size: 12px;
+}
+
+.last-credit {
+	text-align: right;
+}
+
+footer a,
+footer a:visited {
+	color: #8f8f8f;
+}
+
+footer a:hover {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+footer h3.logo {
+	margin: 13px 0 21px;
+}
+
+footer h3.logo a {
+	width: 225px;
+	height: 35px;
+	display: block;
+	background: url("../img/logo-sprite.png") no-repeat 0 -50px;
+	text-indent: -9999%;
+}
+
+footer.main header {
+	background: url("../img/diagonal_dark.png") repeat;
+	font-size: 14px;
+	line-height: 14px;
+	margin: 28px 0;
+}
+
+footer.main header h4 {
+	font-weight: bold;
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 16px;
+	text-transform: uppercase;
+	background: url("../img/bg_dark.png") repeat #f8f8f8;
+	display: inline;
+	/*padding: 0 10px;
+	margin: 0 0 0 14px;*/
+	letter-spacing: 0.1em;
+	font-family: arial, sans-serif;
+}
+/* Footer Lists */
+footer.main ul {
+	margin: 7px 0 0;
+}
+footer.main li {
+	padding: 21px 0;
+	margin: 0px;
+	background: url("../img/stitch_staggered.png") repeat-x left bottom;
+	}
+	
+footer.main li:first-child {
+	padding-top: 0px;
+}	
+
+footer.main li:last-child {
+	background: none;
+}
+
+/*flickr*/
+#flickrImages img {
+	float: left;
+	max-width: 46%;
+	margin: 2%;
+	padding: 6px;
+	border: 1px solid #ededed;
+	background: #ffffff;
+}
+
+/* Images global or only for slideshow? */
+
+figure {
+	padding: 6px;
+	border: 1px solid #ededed;
+	background: #ffffff;
+	line-height: 0px;
+}
+
+figcaption {
+	font-size: .75em;
+	text-align: center;
+	padding: 14px 0;
+}
+
+/* Blog */
+
+.int-content {
+	margin: 20px 0 0 0;
+}
+
+h2 {
+	font-size: 35px;
+	line-height: 42px;
+	margin-bottom: 7px;
+}
+
+hr {
+	border: none;
+	border-bottom: 1px dashed #e5e5e5;
+	margin: 14px 0 28px
+}
+
+article.preview {
+
+}
+
+article.preview .breadcrumbs {
+	margin-bottom: 7px;
+}
+
+article.preview .meta {
+	margin-bottom: 7px;
+}
+
+/* Sidebar Articles*/
+article.sub header {
+	background: url("../img/diagonal_pale.png") repeat;
+	font-size: 14px;
+	line-height: 14px;
+	margin: 28px 0;
+}
+
+article.subscribe header {
+	margin-top: 0px;
+}
+
+article.sub header h4 {
+	font-weight: bold;
+	color: #999999;
+	font-size: 14px;
+	line-height: 14px;
+	text-transform: uppercase;
+	background: url("../img/bg_main.png") repeat #f8f8f8;
+	display: inline;
+	padding: 0 10px;
+	margin: 0 0 0 14px;
+	letter-spacing: 0.1em;
+	font-family: arial, sans-serif;
+}
+
+/* Forms */
+
+	/*Glyn Mooney webkit reset 
+	http://www.skidoosh.co.uk/html/how-to-reset-the-webkit-html5search-field-style-with-css/*/
+	input[type=search]::-webkit-search-decoration,
+	input[type=search]::-webkit-search-cancel-button,
+	input[type=search]::-webkit-search-results-button,
+	input[type=search]::-webkit-search-results-decoration {
+	  display: none;
+	}
+	
+	input[type=search] {
+	  -webkit-appearance: textfield;
+	}
+	
+	input[type=search]:focus {
+	outline: none;	
+	}
+	
+	input[type="text"],
+	input[type="search"],
+	input[type="password"],
+	input[type="email"],
+	textarea,
+	select {
+		width: 100%;
+	}
+	
+	.search,
+	.subscribe {
+		margin: 0 0 20px 0;
+	}
+	.search input[type=search],
+	.subscribe input[type=email] {
+		width: 70%;
+		float: left;
+		margin: 0;
+	}
+	.search button,
+	.subscribe button {
+		width: 28%;
+		float: right;
+		margin: 0;
+		padding: 7px 10px;
+	}
+	
+/* Categories */
+ul.categories {
+	margin: 0;
+}
+ul.categories li {
+	border-bottom: 1px dashed #e5e5e5;
+	margin: 0;
+}
+
+ul.categories li a {
+	text-decoration: none;
+	line-height: 35px;
+	display: block;
+}
+
+ul.categories li a:hover {
+	background: #ffffff;
+}
+
+/* Icons Subscribe*/
+.icon {
+	font-family: "WebSymbolsRegular";
+	font-size: 28px;
+	line-height: 1em;
+}
+
+.subscribe span {
+	width: 30%;
+	float: left;
+}
+.subscribe p {
+	width: 70%;
+	float: right;
+	margin: 0;
+	font-family: Georgia, serif;
+}
+
+.subscribe em {
+	font-size: 21px;
+	font-style: normal;
+}
+
+
+
+.icon.rss {
+	color: #ef7908;
+}
+
+.icon.twitter {
+	color: #39bae6;
+}
+
+/*fluid video and other embeds - http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video*/
+
+.embed {
+    position: relative;
+    padding: 0px;
+    padding-bottom: 56.25%; /* 16/9 ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.embed iframe,
+.embed object,
+.embed embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*sponsors*/
+.sponsors a {
+	float: left;
+	max-width: 46%;
+	margin: 2%;
+}
+
+.sponsors .maxi {
+	display: none;
+}
+
+/* Maps & Contact */
+
+.gmap {
+	background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #EDEDED;
+    line-height: 0;
+    padding: 6px;
+}
+
+.address {
+	text-align: center;
+	margin: 0 auto;
+	padding: 25px 0;
+	line-height: 24px;
+}
+
+/* #Page Styles
+================================================== */
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		
+		/*sponsors*/
+		.sponsors .mini {
+			display: none
+		}
+		.sponsors .maxi {
+			display: block;
+			float: none;
+			max-width: 100%;
+			margin: 0 0 7px;
+		}
+		
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+		
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		
+		article.preview .thumbnail {
+			display: none;
+		}
+		
+		footer.bottom p {
+			text-align: center;
+			margin-bottom: 7px;
+		}
+		
+		nav.primary {
+			padding: 21px 0;
+		}
+		
+		nav.primary select {
+			display: block;
+		}
+		
+		nav.primary ul {
+			display: none;
+		}
+		
+		header.main .banner {
+			display: none;
+		}
+		
+	}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+		
+		article.preview .thumbnail {
+			display: none;
+		}
+	
+		/*sponsors*/
+		.sponsors .mini {
+			display: none
+		}
+		.sponsors .maxi {
+			display: block;
+			float: none;
+			max-width: 100%;
+			margin: 0 0 7px;
+		}
+		
+		footer.bottom p {
+			text-align: center;
+			margin-bottom: 7px;
+		}
+		
+		nav.primary {
+			padding: 21px 0;
+		}
+		
+		nav.primary select {
+			display: block;
+		}
+		
+		nav.primary ul {
+			display: none;
+		}
+		
+		header.main .banner {
+			display: none;
+		}
+		
+	}
+
+
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+
+/*	@font-face {
+	    font-family: 'FontName';
+	    src: url('../fonts/FontName.eot');
+	    src: url('../fonts/FontName.eot?iefix') format('eot'),
+	         url('../fonts/FontName.woff') format('woff'),
+	         url('../fonts/FontName.ttf') format('truetype'),
+	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+*/
