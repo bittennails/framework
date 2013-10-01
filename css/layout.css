@@ -274,14 +274,14 @@ footer h3.logo a {
 	text-indent: -9999%;
 }
 
-footer.main header {
+footer.main section {
 	background: url("../img/diagonal_dark.png") repeat;
 	font-size: 14px;
 	line-height: 14px;
 	margin: 28px 0;
 }
 
-footer.main header h4 {
+footer.main section h4 {
 	font-weight: bold;
 	color: #ffffff;
 	font-size: 16px;
@@ -329,6 +329,12 @@ figure {
 	border: 1px solid #ededed;
 	background: #ffffff;
 	line-height: 0px;
+}
+.imgbord {
+	padding: 6px;
+	border: 1px solid #ededed;
+	background: #ffffff;
+	line-height: 0px;	
 }
 
 figcaption {
