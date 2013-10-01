@@ -1,3 +1,2 @@
 To-Do's:
 
-1. Remove <header> elements from the footer...'The element header must not appear as a descendant of the footer element.'
